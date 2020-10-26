@@ -42,6 +42,7 @@ module.exports = {
 				defaultLayouts: {
 					default: require.resolve('./src/components/mdx_layout.js'),
 				},
+				extensions: [`.mdx`, `.md`],
 			},
 		},
 		`gatsby-transformer-sharp`,

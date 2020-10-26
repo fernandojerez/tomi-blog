@@ -1,6 +1,14 @@
 import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
+import CodeBlock from './code_block';
 
-const MdxLayout = ({ children }) => <MDXProvider>{children}</MDXProvider>;
+const components = {
+	pre: props => <div {...props} />,
+	code: CodeBlock,
+};
+
+const MdxLayout = ({ children }) => (
+	<MDXProvider components={components}>{children}</MDXProvider>
+);
 
 export default MdxLayout;
