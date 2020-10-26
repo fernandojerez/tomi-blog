@@ -7,7 +7,7 @@ import {
 	ThemeProvider as MaterialThemeProvider,
 } from '@material-ui/core/styles';
 import { useDispatch, useSelector } from 'react-redux';
-import { GlobalStyles } from './global';
+import { GlobalThemeStyles } from './global';
 
 const primaryColor = '#ff5722';
 const secondaryColor = '#ff9100';
@@ -72,7 +72,7 @@ export const Theme = ({ children }) => {
 	return (
 		<MaterialThemeProvider theme={materialTheme}>
 			<ThemeProvider theme={materialTheme}>
-				<GlobalStyles />
+				<GlobalThemeStyles />
 				{children}
 			</ThemeProvider>
 		</MaterialThemeProvider>
