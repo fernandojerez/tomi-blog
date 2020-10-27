@@ -7,17 +7,30 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { background } from '../styles/theme';
+import { background, spacing, surface } from '../styles/theme';
 import styled from 'styled-components';
 
 const Background = styled.div`
 	background-color: ${background};
+	display: flex;
+	justify-content: center;
 	width: 100vw;
 	height: 100vh;
 `;
 
+const Content = styled.div`
+	background-color: ${surface};
+	flex-grow: 1;
+	max-width: 700px;
+	padding: ${spacing(2)};
+`;
+
 const Layout = ({ children }) => {
-	return <Background>{children}</Background>;
+	return (
+		<Background>
+			<Content>{children}</Content>
+		</Background>
+	);
 };
 
 Layout.propTypes = {

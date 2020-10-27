@@ -32,6 +32,10 @@ export const background = ({ theme }) => {
 	return theme.palette.background.paper;
 };
 
+export const surface = ({ theme }) => {
+	return theme.palette.background.default;
+};
+
 export const onPrimary = ({ theme }) => {
 	return theme.palette.text.primary;
 };
