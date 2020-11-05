@@ -48,14 +48,14 @@ export const headerFontFamily = () => '"Merriweather"';
 export const bodyFontFamily = () => '"Open Sans"';
 
 export const Theme = ({ children }) => {
-	const dispatch = useDispatch();
+	/*const dispatch = useDispatch();
 	useEffect(() => {
 		if (window) {
 			const prefersDarkMode = window.matchMedia('(prefers-color-scheme:dark)')
 				.matches;
 			dispatch(init(prefersDarkMode ? 'dark' : 'light'));
 		}
-	}, [dispatch]);
+	}, [dispatch]);*/
 	const theme = useSelector(currentTheme);
 	const materialTheme = useMemo(
 		() =>
