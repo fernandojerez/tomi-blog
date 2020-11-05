@@ -22,7 +22,7 @@ const Content = styled.div`
 	background-color: ${surface};
 	flex-grow: 1;
 	max-width: 700px;
-	padding: ${spacing(2)};
+	padding: 16px;
 `;
 
 const Layout = ({ children }) => {
