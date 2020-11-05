@@ -10,8 +10,6 @@ import {
 export const GlobalStyles = createGlobalStyle`
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -19,6 +17,8 @@ html {
 }
 
 body {    
+  margin: 0;
+  padding: 0;
   height: 100%;
 }
 
@@ -42,7 +42,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: ${props => spacing(1)(props)};
+  margin-bottom: ${props => spacing(2)(props)};
+  margin-top: ${props => spacing(2)(props)};
   font-family: ${props => headerFontFamily(props)};
 }
 `;

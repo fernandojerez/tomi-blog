@@ -15,7 +15,7 @@ const Background = styled.div`
 	display: flex;
 	justify-content: center;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 `;
 
 const Content = styled.div`
